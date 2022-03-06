@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation demo</title>
+    <style>
+        div
+        {
+            width: 200px;
+            height: 200px;
+            transition: 3s;
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+            background-color: red;
+        }
+        #translate:hover
+        {
+            transform:translate(100px,100px);
+            background-color: rgb(64, 200, 218);
+            color: white;
+        }
+        #rotate:hover
+        {
+            transform:rotate(360deg);
+            background-color: rgb(64, 200, 218);
+            color: white;
+        }
+        #rotate3d:hover
+        {
+            transform: rotate3d(1,1,1,360deg);
+            background-color: rgb(64, 200, 218);
+            color: white;
+        }
+        #skew:hover
+        {
+            transform: skew(40deg);
+            background-color: rgb(64, 200, 218);
+            color: white;
+        }
+        #scale:hover
+        {
+            transform: scale(1.5,0.5);
+            background-color: rgb(64, 200, 218);
+            color: white;
+        }
+        #opacity:hover
+        {
+            opacity: 0.1;
+           
+        }
+        #rgba:hover
+        {
+            background:rgba(3, 162, 224, 0.884);
+        }
+        #boxshadow:hover
+        {
+            box-shadow: 2px 1px 30px black;
+        }
+        #textshadow:hover
+        {
+            text-shadow: 3px 3px 3px rgb(251, 255, 0);
+        }
+        #borderradius:hover
+        {
+            border-radius: 20px;
+        }
+        #overflow:hover
+        {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="translate">translate</div><hr>
+    <div id="rotate">rotate</div><hr>
+    <div id="rotate3d">rotate3d</div><hr>
+    <div id="skew">skew</div><hr>
+    <div id="scale">scale</div><hr>
+    <div id="opacity">opacity</div><hr>
+    <div id="rgba">rgba</div><hr>
+    <div id="boxshadow">boxshadow</div><hr>
+    <div id="textshadow">textshadow</div><hr>
+    <div id="borderradius">borderradius</div><hr>
+    <div id="overflow">overflow</div><hr>
+
+</body>
+</html>

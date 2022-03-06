@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        div
+        {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        
+    </style>
+    <script>
+        function internalAlert()
+        {
+            alert("internal alert function");
+        }
+        function internalPromp()
+        {
+            var f1=prompt("Enter your first name");
+            var f2=prompt("Enter your last name");
+            alert(f1+" "+f2);
+        }
+        function internalConfirm()
+        {
+            if(confirm("are you sure...."))
+            {
+                alert("Ok you are in");
+            }
+            else
+            {
+                alert("You need to work more");
+            }
+        }
+        function bgcolor()
+        {
+            document.body.style.backgroundColor="green";
+        }
+        function boxcolor()
+        {
+        
+            document.getElementById("d1").style.backgroundColor="Gray";
+        }
+        function bodyprompt()
+        {
+            var c=prompt("Enter color:");
+            document.body.style.backgroundColor=c;
+        }
+        function boxprompt()
+        {
+            var c=prompt("Enter color:");
+            document.getElementById("d1").style.backgroundColor=c;   
+        }
+        function cp1()
+        {
+            document.body.style.backgroundColor=document.getElementById("c1").value;
+        }
+        function cp2()
+        {
+            document.getElementById("d1").style.backgroundColor=document.getElementById("c2").value;
+        }
+
+    </script>
+    <script src="script/script.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="d1">Hi</div><hr>
+    <input type="button" value="Alert" onclick="alert('Alert working fine')">&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Confirm inline" onclick="confirm('confirm works fine')">&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Prompt" onclick="prompt('prompt works fine also')"><hr>
+
+    <input type="button" value="alert" onclick="internalAlert()">&nbsp;&nbsp;
+    <input type="button" value="confirm" onclick="internalConfirm()">&nbsp;
+    &nbsp;&nbsp;&nbsp;
+    <input type="button" value="prompt" onclick="internalPromp()"><hr>
+    <input type="button" value="alert" onclick="externalAlert()">&nbsp;&nbsp;&nbsp;
+    <input type="button" value="confirt" onclick="externalConfirm()">&nbsp;&nbsp;&nbsp;
+    <input type="button" value="prompt" onclick="externalPrompt()"><hr>
+    <input type="button" value="Bg color green" onclick="bgcolor()">&nbsp;&nbsp;&nbsp;
+    <input type="button" value="box color blue" onclick="boxcolor()"><hr>
+    <input type="button" value="Body color prompt" onclick="bodyprompt()">&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Box color prompt" onclick="boxprompt()"><hr>
+    <input type="color" id="c1" onchange="cp1()">&nbsp;&nbsp;&nbsp;
+    <input type="color" id="c2" onchange="cp2()"><hr>
+    
+
+</body>
+</html>
