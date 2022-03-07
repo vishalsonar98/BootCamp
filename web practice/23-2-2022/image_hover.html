@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover</title>
+    <style>
+        #container
+        {
+            position: relative;
+            width: 300px;
+        }
+        .img
+        {
+            display: block;
+            width: 300px;
+            height: 400px;
+            transition: 2s;
+        }
+        #name
+        {
+            position:absolute;
+			  top: 0;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  height: 100%;
+			  opacity:0;
+			  transition: 2s;
+			  background-color:rgba(0,0,0,0.7);
+        }
+        #container:hover #name
+        {
+            opacity: 1;
+        }
+        #container:hover .img{
+            transform: rotate3d(0,1,1,360deg);
+        }
+        #text
+        {
+            color: white;
+            text-shadow: 5px 5px 3px rgba(255, 0, 0, 0.726);
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+			text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>My self</h1>
+    <div id="container">
+        <img src="images/I1.jpeg" alt="my pic" class="img">
+        <div id="name">
+          <div id="text">Mr.Vishal Sonar</div>
+        </div>
+    </div>
+</body>
+</html>

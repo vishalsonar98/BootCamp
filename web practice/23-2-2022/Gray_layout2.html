@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gray layout 2</title>
+    <style>
+        *
+        {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        body
+        {
+            margin: 0px;
+        }
+        .dev
+        {
+            background-color: gray;
+        }
+        .con
+        {
+            margin-bottom: 10px;
+        }
+
+        #r1
+        {
+            
+            width: 100%;
+            height: 50px;
+        }
+        #r1 div
+        {
+           
+            float: left;
+            padding-top: 25px;
+            padding-bottom: 25px;
+
+        }
+        #r1c1
+        {
+
+            padding-left: 2%;
+            width: 48%;
+           
+
+        }
+        #r1c2
+        {
+            width: 50%;
+            
+        }
+
+        #r2
+        {
+            text-align: center;
+            padding-top: 50px;
+            width: 100%;
+            padding-bottom: 50px;
+        }
+        #r3
+        {
+            width: 100%;
+            text-align: center;
+            height: 60px;
+            padding-top: 35px;
+        }
+        #r4
+        {
+            width: 100%;
+            height: 400px;
+            text-align: center;
+        }
+        #r4 div
+        {
+            float: left;
+            text-align: center;
+            
+        }
+        #r4c1,#r4c2
+        {
+            margin-right: 2%;
+        }
+        #r4c1,#r4c2,#r4c3
+        {
+            width: 32%;
+            height: 200px;
+            padding-top: 200px;
+        }
+        #r5
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <div id="r1" class="con">
+        <div id="r1c1" class="dev">Logo</div>
+        <div id="r1c2" class="dev">Navigation</div>
+    </div>
+    <br>
+    <div id="r2" class="dev con">Header/Banner</div>
+    
+    <div id="r3" class="dev con">Intro Text Area</div>
+    
+    <div id="r4" class="con">
+        <div id="r4c1" class="dev">Box1</div>
+        <div id="r4c2" class="dev">Box2</div>
+        <div id="r4c3" class="dev">Box3</div>
+    </div>
+
+    <div id="r5" class="dev con">Footer</div>
+    </div>
+</body>
+</html>

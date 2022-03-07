@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gray layout4</title>
+    <style>
+        *
+        {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        body
+        {
+            margin: 0px;
+        }
+         #r1
+        {
+            
+            width: 100%;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        #r1 div
+        {
+           background-color: gray;
+            float: left;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            
+        }
+        #r1c1
+        {
+
+            padding-left: 2%;
+            width: 48%;
+           
+
+        }
+        #r1c2
+        {
+            width: 50%;
+            
+        }
+
+
+        #R2
+        {
+            height:800px;
+            width:100%;
+            
+        }
+		#R2R1,#R2R2,#R2R3,#R2R4
+        {
+            height:180px;
+            margin-bottom:20px;
+            width:100%;
+            
+        }
+		#R2R1 div,#R2R2 div,#R2R3 div,#R2R4 div
+        {
+            height:180px;
+            width:23%;
+            margin-right:2%;
+            float:left;
+            background-color:gray;
+        }
+		#R2R1 div:last-child,#R2R2 div:last-child,#R2R3 div:last-child,#R2R4 div:last-child
+        {
+            margin-right:0!important;
+            width:25%!important;
+        }
+
+        #r4
+        {
+            width: 100%;
+            height: 200px;
+            text-align: center;
+        }
+        #r4 div
+        {
+            float: left;
+            text-align: center;
+            background-color: gray;
+            
+        }
+        #r4c1,#r4c2
+        {
+            margin-right: 2%;
+        }
+        #r4c1,#r4c2,#r4c3
+        {
+            width: 32%;
+            height: 100px;
+            padding-top: 100px;
+        }
+        #r5
+        {
+            text-align: center;
+            background-color: gray;
+            width: 100%;
+            height: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="r1" class="con">
+        <div id="r1c1" class="dev">Logo</div>
+        <div id="r1c2" class="dev">Navigation</div>
+    </div> <br>
+    <div id="R2">
+        <div id="R2R1">
+            <div id="R2R1C1"></div>
+            <div id="R2R1C2"></div>
+            <div id="R2R1C3"></div>
+            <div id="R2R1C4"></div>
+        </div>
+        <div id="R2R2">
+            <div id="R2R2C1"></div>
+            <div id="R2R2C2"></div>
+            <div id="R2R2C3"></div>
+            <div id="R2R2C4"></div>
+        </div>
+        <div id="R2R3">
+            <div id="R2R3C1"></div>
+            <div id="R2R3C2"></div>
+            <div id="R2R3C3"></div>
+            <div id="R2R3C4"></div>
+        </div>
+        <div id="R2R4">
+            <div id="R2R4C1"></div>
+            <div id="R2R4C2"></div>
+            <div id="R2R4C3"></div>
+            <div id="R2R4C4"></div>
+        </div>
+    </div>
+    <div id="r4" class="con">
+        <div id="r4c1" class="dev">Box1</div>
+        <div id="r4c2" class="dev">Box2</div>
+        <div id="r4c3" class="dev">Box3</div>
+    </div>
+    <div id="r5" class="dev con">Footer</div>
+</body>
+</html>

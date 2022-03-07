@@ -1,0 +1,14 @@
+.name
+{
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    height: 200px;
+    border: 2px solid black;
+}
+#j1
+{
+    background-color: blueviolet;
+    color: white;
+}
